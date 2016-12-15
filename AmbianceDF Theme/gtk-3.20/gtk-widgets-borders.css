@@ -7,7 +7,7 @@ menubar menuitem,
 
 menubar menuitem:hover,
 .menubar.menuitem:hover {
-    border: 1px solid #151b22;
+    border: 1px solid #2C3138;
     border-bottom-width: 0px;
     border-radius: 4px 4px 0 0;
 }

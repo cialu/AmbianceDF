@@ -13,7 +13,7 @@ style "terminal_menubar"
 
 style "terminal_notebook" = "dark"
 {
-	fg[ACTIVE] = mix (0.8, "#dfdbd2", "#151b22")
+	fg[ACTIVE] = mix (0.8, "#dfdbd2", "#2C3138")
 
 	engine "murrine" {
 	}
@@ -21,11 +21,11 @@ style "terminal_notebook" = "dark"
 
 style "terminal_scrollbar" = "scrollbar"
 {
-	bg[NORMAL]        = "#151b22"
-	bg[PRELIGHT]      = shade(1.08, "#151b22")
-	bg[ACTIVE]        = shade(0.94, "#151b22")
+	bg[NORMAL]        = "#2C3138"
+	bg[PRELIGHT]      = shade(1.08, "#2C3138")
+	bg[ACTIVE]        = shade(0.94, "#2C3138")
 	bg[SELECTED]      = shade(1.0, @selected_bg_color)
-	bg[INSENSITIVE]   = "#151b22"
+	bg[INSENSITIVE]   = "#2C3138"
 
 	engine "murrine" {
 	}

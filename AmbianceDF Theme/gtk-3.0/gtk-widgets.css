@@ -1622,8 +1622,8 @@ GtkTextView {
 
 .titlebar.header-bar .button.titlebutton {
     background-clip: padding-box;
-    border: 1px solid #2b2f36;
-    color: #2b2f36;
+    border: 1px solid #21252B;
+    color: #21252B;
     icon-shadow: 0 1px rgba(255, 255, 255, 0.1);
     border-radius: 9px;
     padding: 0;
@@ -1656,7 +1656,7 @@ GtkTextView {
 }
 
 .titlebar.header-bar .button.titlebutton:backdrop {
-    color: #2b2f36;
+    color: #21252B;
     icon-shadow: none;
     background-image: linear-gradient(to top, #605f59, #5b5a54);
 }
