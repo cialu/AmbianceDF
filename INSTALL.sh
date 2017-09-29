@@ -19,7 +19,7 @@ cat <<-EOF
 
 
   $gh_desc
-  https://github.com/lucaciavatta/$gh_repo
+  https://github.com/cialu/$gh_repo
 
 
 EOF
