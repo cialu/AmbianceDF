@@ -2,7 +2,7 @@
 
 Instructions on how to install **AmbianceDF** theme:
 
- - download or clone the package from [https://github.com/lucaciavatta/AmbianceDF/](https://github.com/lucaciavatta/AmbianceDF/)
+ - download or clone the package from [https://github.com/cialu/AmbianceDF/](https://github.com/cialu/AmbianceDF/)
 
  - open a terminal window
 
