@@ -29,6 +29,13 @@ echo "=> Looking inside your system ..."
 
 echo "=> Installing ..."
 
+echo -n "Do you want to install also AmbianceDF icons? Type 'yes' and press [ENTER]: "
+read choice
+
+if [ choice = "yes" ]; then
+	                
+echo "Installing icons ..."
+
 mkdir -p ~/.icons
 
 cp --no-preserve=mode,ownership -r \
@@ -39,6 +46,8 @@ echo "=> Icons installed ..."
 gtk-update-icon-cache -q ~/.icons/AmbianceDF\ Icons/ || true
 
 echo "=> Icons cached ..."
+
+fi
 
 mkdir -p ~/.themes
 
@@ -53,4 +62,10 @@ gsettings set org.gnome.desktop.wm.preferences theme "AmbianceDF Theme"
 
 echo "=> Theme turned on ..."
 
+echo "Installing shell ..."
+echo "User-theme extension must be enabled!"
+
+gsettings set org.gnome.shell.extensions.user-theme name "AmbianceDF"
+
+echo "=> Shell turned on ..."
 echo "=> Done!"

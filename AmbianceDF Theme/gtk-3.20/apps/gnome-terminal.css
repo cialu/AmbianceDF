@@ -22,6 +22,10 @@ notebook.terminal-notebook header {
     border: none;
 }
 
+.maximized notebook.terminal-notebook header:not(:backdrop) {
+    background-color: @maximized_header_color;
+}
+
 
 notebook.terminal-notebook header.top tab,
 notebook.terminal-notebook header.top tab:hover {

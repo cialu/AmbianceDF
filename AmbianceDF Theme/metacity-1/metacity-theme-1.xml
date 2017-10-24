@@ -64,31 +64,31 @@
   <title color="#333" x="10" y="(((height - title_height) / 2) `max` 0)-1"/>
   <title color="#333" x="9" y="(((height - title_height) / 2) `max` 0)"/>
   <title color="#333" x="11" y="(((height - title_height) / 2) `max` 0)"/>
-  <title color="#807d78" x="10" y="(((height - title_height) / 2) `max` 0)"/>
+  <title color="#21252B" x="10" y="(((height - title_height) / 2) `max` 0)"/>
 </draw_ops>
 
 <draw_ops name="draw_title">
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="shade/#474642/1.1" />
+    <color value="shade/#111111/1.1" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#474642/1.2" />
-    <color value="shade/#474642/1.5" />
-    <color value="shade/#474642/1.2" />
+    <color value="shade/#111111/1.2" />
+    <color value="shade/#111111/1.5" />
+    <color value="shade/#111111/1.2" />
   </gradient>
   <!-- left arch -->
-  <!-- <arc color="shade/#474642/1.1" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
+  <!-- <arc color="shade/#111111/1.1" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
   <arc color="#3c3b37" x="0" y="0" width="9" height="9" start_angle="270" extent_angle="90" /> -->
   <line color="#3c3b37" x1="0" x2="4" y1="1" y2="1"/>
   <line color="#3c3b37" x1="0" x2="2" y1="2" y2="2"/>
   <line color="#3c3b37" x1="0" x2="1" y1="3" y2="3"/>
   <line color="#3c3b37" x1="0" x2="1" y1="4" y2="4"/>
   <!-- right arch -->
-  <!-- <arc color="shade/#474642/1.1" x="width-10" y="1" width="9" height="7" start_angle="0" extent_angle="90" />
+  <!-- <arc color="shade/#111111/1.1" x="width-10" y="1" width="9" height="7" start_angle="0" extent_angle="90" />
   <arc color="#3c3b37" x="width-10" y="0" width="9" height="9" start_angle="0" extent_angle="90" /> -->
   <line color="#3c3b37" x1="width-5" x2="width" y1="1" y2="1"/>
   <line color="#3c3b37" x1="width-3" x2="width" y1="2" y2="2"/>
@@ -105,24 +105,24 @@
   <!-- frame and gradient -->
   <rectangle color="#3c3b37" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="shade/#474642/0.92" />
+    <color value="shade/#111111/0.92" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#474642/0.94" />
-    <color value="#474642" />
-    <color value="shade/#474642/0.94" />
+    <color value="shade/#111111/0.94" />
+    <color value="#111111" />
+    <color value="shade/#111111/0.94" />
   </gradient>
   <!-- left arch -->
-  <!-- <arc color="shade/#474642/0.98" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
+  <!-- <arc color="shade/#111111/0.98" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
   <arc color="#3c3b37" x="0" y="0" width="9" height="9" start_angle="270" extent_angle="90" /> -->
   <line color="#3c3b37" x1="0" x2="4" y1="1" y2="1"/>
   <line color="#3c3b37" x1="0" x2="2" y1="2" y2="2"/>
   <line color="#3c3b37" x1="0" x2="1" y1="3" y2="3"/>
   <line color="#3c3b37" x1="0" x2="1" y1="4" y2="4"/>
   <!-- right arch -->
-  <!-- <arc color="shade/#474642/0.98" x="width-10" y="1" width="9" height="7" start_angle="0" extent_angle="90" />
+  <!-- <arc color="shade/#111111/0.98" x="width-10" y="1" width="9" height="7" start_angle="0" extent_angle="90" />
   <arc color="#3c3b37" x="width-10" y="0" width="9" height="9" start_angle="0" extent_angle="90" /> -->
   <line color="#3c3b37" x1="width-5" x2="width" y1="1" y2="1"/>
   <line color="#3c3b37" x1="width-3" x2="width" y1="2" y2="2"/>
@@ -139,14 +139,14 @@
   <!-- frame and gradient -->
   <line color="#3c3b37" x1="0" x2="width" y1="0" y2="0"/>
   <gradient type="vertical" x="0" y="1" width="width" height="top_height-1">
-    <color value="shade/#474642/0.98" />
+    <color value="shade/#111111/0.98" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#474642/1.08" />
-    <color value="shade/#474642/1.38" />
-    <color value="shade/#474642/1.08" />
+    <color value="shade/#111111/1.08" />
+    <color value="shade/#111111/1.38" />
+    <color value="shade/#111111/1.08" />
   </gradient>
 </draw_ops>
 
@@ -154,11 +154,11 @@
   <!-- frame and gradient -->
   <line color="#3c3b37" x1="0" x2="width" y1="0" y2="0"/>
   <gradient type="vertical" x="0" y="1" width="width" height="top_height-1">
-    <color value="shade/#474642/0.9" />
+    <color value="shade/#111111/0.9" />
     <color value="#3c3b37" />
   </gradient>
   <!-- top line -->
-  <line color="shade/#474642/0.96" x1="0" x2="width" y1="1" y2="1"/>
+  <line color="shade/#111111/0.96" x1="0" x2="width" y1="1" y2="1"/>
 </draw_ops>
 
 <!-- window frames -->
@@ -192,28 +192,28 @@
 
 <!-- button trough left -->
 <draw_ops name="left_left_background_focused_normal">
-  <image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_left_background_focused_pressed">
-  <image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_middle_background_focused_normal">
-  <image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_middle.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_middle_background_focused_pressed">
-  <image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_middle.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_right_background_focused_normal">
-  <image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_right_background_focused_pressed">
-  <image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_left_background_unfocused_normal">
-  <image filename="trough_unfocused_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_left_background_unfocused_pressed">
-  <image filename="trough_unfocused_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_middle_background_unfocused_normal">
   <rectangle color="#3c3b37" filled="true" x="0" y="1" width="width" height="height"/>
@@ -222,36 +222,36 @@
   <rectangle color="#3c3b37" filled="true" x="0" y="1" width="width" height="height"/>
 </draw_ops>
 <draw_ops name="left_right_background_unfocused_normal">
-  <image filename="trough_unfocused_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="left_right_background_unfocused_pressed">
-  <image filename="trough_unfocused_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
   
 <!-- button trough right -->
 <draw_ops name="right_left_background_focused_normal">
-  <image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_left_background_focused_pressed">
-  <image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_middle_background_focused_normal">
-  <image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_middle.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_middle_background_focused_pressed">
-  <image filename="trough_middle.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_middle.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_right_background_focused_normal">
-  <image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_right_background_focused_pressed">
-  <image filename="trough_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_left_background_unfocused_normal">
-  <image filename="trough_unfocused_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_left_background_unfocused_pressed">
-  <image filename="trough_unfocused_left.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_left.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_middle_background_unfocused_normal">
   <rectangle color="#3c3b37" filled="true" x="0" y="1" width="width" height="height"/>
@@ -260,96 +260,96 @@
   <rectangle color="#3c3b37" filled="true" x="0" y="1" width="width" height="height"/>
 </draw_ops>
 <draw_ops name="right_right_background_unfocused_normal">
-  <image filename="trough_unfocused_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="right_right_background_unfocused_pressed">
-  <image filename="trough_unfocused_right.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="trough_unfocused_right.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 
 <!-- button prelightlays -->
 <draw_ops name="menu_focused_normal">
-   <image filename="menu.png" x="0" y="1" width="object_width" height="object_height"/>
+   <image filename="menu.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="menu_focused_prelight">
-  <image filename="menu_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="menu_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="menu_unfocused_normal">
-  <image filename="menu.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="menu.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="menu_unfocused_prelight">
-  <image filename="menu_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="menu_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="minimize_focused_normal">
-  <image filename="minimize_focused_normal.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="minimize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="minimize_focused_prelight">
-  <image filename="minimize_focused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="minimize_focused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="minimize_focused_pressed">
-  <image filename="minimize_focused_pressed.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="minimize_focused_pressed.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="minimize_unfocused_normal">
-  <image filename="minimize_unfocused.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="minimize_unfocused.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="minimize_unfocused_prelight">
-  <image filename="minimize_unfocused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="minimize_unfocused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="minimize_unfocused_pressed">
-  <image filename="minimize.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="minimize.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="maximize_focused_normal">
-  <image filename="maximize_focused_normal.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="maximize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="maximize_focused_prelight">
-  <image filename="maximize_focused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="maximize_focused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="maximize_focused_pressed">
-  <image filename="maximize_focused_pressed.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="maximize_focused_pressed.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="maximize_unfocused_normal">
-  <image filename="maximize_unfocused.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="maximize_unfocused.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="maximize_unfocused_prelight">
-  <image filename="maximize_unfocused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="maximize_unfocused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="maximize_unfocused_pressed">
-  <image filename="maximize.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="maximize.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="unmaximize_focused_normal">
-  <image filename="unmaximize_focused_normal.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="unmaximize_focused_normal.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="unmaximize_focused_prelight">
-  <image filename="unmaximize_focused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="unmaximize_focused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="unmaximize_focused_pressed">
-  <image filename="unmaximize_focused_pressed.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="unmaximize_focused_pressed.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="unmaximize_unfocused_normal">
-  <image filename="unmaximize_unfocused.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="unmaximize_unfocused.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="unmaximize_unfocused_prelight">
-  <image filename="unmaximize_unfocused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="unmaximize_unfocused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="unmaximize_unfocused_pressed">
-  <image filename="unmaximize.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="unmaximize.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="close_focused_normal">
-  <image filename="close_focused_normal.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="close_focused_normal.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="close_focused_prelight">
-  <image filename="close_focused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="close_focused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="close_focused_pressed">
-  <image filename="close_focused_pressed.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="close_focused_pressed.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="close_unfocused_normal">
-  <image filename="close_unfocused.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="close_unfocused.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="close_unfocused_prelight">
-  <image filename="close_unfocused_prelight.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="close_unfocused_prelight.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="close_unfocused_pressed">
-  <image filename="close.png" x="0" y="1" width="object_width" height="object_height"/>
+  <image filename="close.svg" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
 
 <!-- frame style -->

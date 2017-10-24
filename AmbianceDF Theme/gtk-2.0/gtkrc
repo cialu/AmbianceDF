@@ -1,4 +1,4 @@
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#21252B\ntooltip_fg_color:#ffffff\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#2C3138\nbg_color:#F2F1F0\ntooltip_bg_color:#000000\nlink_color:#DD4814"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#21252B\ntooltip_fg_color:#ffffff\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#111111\nbg_color:#F2F1F0\ntooltip_bg_color:#000000\nlink_color:#DD4814"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
@@ -35,6 +35,9 @@ style "default" {
 	GtkScrollbar::slider-width = 13
 	GtkScrollbar::min-slider-length = 31
 
+        GtkScrolledWindow::scrollbar-spacing   = 0
+        GtkScrolledWindow::scrollbars-within-bevel = 0
+
 	GtkMenuBar::internal-padding = 0
 	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
 	GtkExpander::expander-size = 11
@@ -59,7 +62,7 @@ style "default" {
 
 	GtkProgressBar::min-horizontal-bar-height = 14
 	GtkProgressBar::min-vertical-bar-width = 14
-	
+
 	GtkImage::x-ayatana-indicator-dynamic = 1
 	GtkMenuBar::window-dragging = 1
 
@@ -84,7 +87,7 @@ style "default" {
 	text[NORMAL]      = @text_color
 	text[PRELIGHT]    = @text_color
 	text[SELECTED]    = @selected_fg_color
-	text[INSENSITIVE] = shade (0.8, @bg_color)
+	text[INSENSITIVE] = shade (0.8, @text_color) /* shade (0.8, @bg_color) */
 	text[ACTIVE]      = darker (@text_color)
 
 	base[NORMAL]      = @base_color
@@ -121,8 +124,8 @@ style "default" {
 
 style "dark"
 {
-	color["bg_color_dark"] 	= "#2C3138"
-	color["fg_color_dark"] 	= "#dfdbd2"
+	color["bg_color_dark"] 	= "#21252B"
+	color["fg_color_dark"] 	= "#ffffff"
 	color["selected_fg_color_dark"] = "#ffffff"
 
 	fg[NORMAL]        = @fg_color_dark
@@ -130,13 +133,13 @@ style "dark"
 	fg[ACTIVE]	  = @fg_color_dark
 	fg[SELECTED]	  = @selected_fg_color_dark
 	fg[INSENSITIVE]	  = shade (0.5, @fg_color_dark)
-  
+
 	bg[NORMAL]        = @bg_color_dark
 	bg[ACTIVE]	  = shade (0.8, @bg_color_dark)
 	bg[SELECTED]      = @selected_bg_color
-	bg[PRELIGHT]      = shade (1.0, "#4D4C48")
+	bg[PRELIGHT]      = shade (1.0, "#21252B")
 	bg[INSENSITIVE]   = shade (0.85, @bg_color_dark)
-  	
+
 	text[NORMAL]      = @fg_color_dark
 	text[PRELIGHT]	  = shade (1.15, @fg_color_dark)
 	text[SELECTED]	  = @selected_fg_color_dark
@@ -231,7 +234,7 @@ style "scrollbar" = "button" {
 
 	bg[NORMAL] = @bg_color
 	bg[PRELIGHT] = shade (1.04, @bg_color)
-	
+
 	bg[ACTIVE] = shade (0.96, @bg_color)
 
 	engine "murrine"
@@ -291,7 +294,7 @@ style "notebook_bg" {
 style "notebook" {
 	xthickness = 2
 	ythickness = 2
-	
+
 	engine "murrine" {
 		roundness = 3
 		contrast = 0.8
@@ -310,7 +313,7 @@ style "statusbar" {
 style "comboboxentry" = "notebook_button" {
 	xthickness = 3
 	ythickness = 3
-	
+
 	engine "murrine" {
 		textstyle = 1
 		glowstyle = 5
@@ -340,7 +343,7 @@ style "toolbar-button" = "notebook_button" {
 	}
 }
 
-style "menu" {
+style "menu" = "dark" {
 	xthickness = 0
 	ythickness = 0
 
@@ -382,7 +385,7 @@ style "scale_menu_item" = "scale" {
 	GtkScale::slider-width = 21
 	GtkScale::slider-length = 13
 
-	bg[ACTIVE] = shade(0.98, "#4D4C48")
+	bg[ACTIVE] = shade(0.98, "#21252B")
 	bg[INSENSITIVE] = shade (0.9, @bg_color)
 
 	engine "murrine" {
@@ -404,7 +407,7 @@ style "separator_menu_item" {
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 1
 	GtkWidget::separator-height = 7
-	
+
 	engine "murrine" {
 		contrast = 0.6
 		separatorstyle = 0
@@ -459,7 +462,7 @@ style "progressbar" {
 }
 
 style "progressbar_menu_item" = "progressbar" {
-	bg[ACTIVE] = shade(0.98, "#4D4C48")
+	bg[ACTIVE] = shade(0.98, "#21252B")
 
 	engine "murrine" {
 		roundness = 0
@@ -528,6 +531,10 @@ style "nautilus_location" {
 	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @selected_bg_color)
 }
 
+style "caja_location" {
+        bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @selected_bg_color)
+}
+
 style "calendar" {
 	xthickness = 0
 	ythickness = 0
@@ -538,8 +545,8 @@ style "calendar" {
 }
 
 style "calendar_menu_item" = "calendar" {
-	base[NORMAL] = "#605E58"
-	base[ACTIVE] = "#4b4944"
+	base[NORMAL] = "#333333"
+	base[ACTIVE] = "#21252B"
 }
 
 style "iconview" {
@@ -693,6 +700,10 @@ widget_class "*.ETree.ECanvas" style "treeview_header"
 # ToDo: A more generic approach for all applications that have a widget like this.
 widget "*.nautilus-extra-view-widget" style : highest "nautilus_location"
 
+# Special case the caja-extra-view-widget
+# ToDo: A more generic approach for all applications that have a widget like this.
+widget "*.caja-extra-view-widget" style : highest "caja_location"
+
 # Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
 # Note that this work around assumes that the combobox is _not_ in appears-as-list mode.
 widget_class "*.<GtkComboBox>.<GtkCellView>" style "text_is_fg_color_workaround"
@@ -704,7 +715,7 @@ widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround
 widget_class "*<GtkListItem>*" style "fg_is_text_color_workaround"
 # GtkCList also uses the fg color to draw text on top of the base colors.
 widget_class "*<GtkCList>" style "fg_is_text_color_workaround"
-# Nautilus when renaming files, and maybe other places.
+# Nautilus/Caja when renaming files, and maybe other places.
 widget_class "*<EelEditableLabel>" style "fg_is_text_color_workaround"
 # Work around for ubuntu's lucid sound indicator
 widget "ido-offscreen-scale" style "soundfix"
@@ -714,9 +725,26 @@ widget "*IdoEntryMenuItem*" style "wide"
 # See the documentation of the style.
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
 
+# Various performance fixes if murrine textstyle is on by default in the theme.
+style "performance-fix" {
+ engine "murrine" {
+   textstyle = 0
+   contrast = 0.5
+ }
+}
+
+widget_class "*gtkmm__GtkWindow*"  style "performance-fix" # Inkscape
+widget_class "*GimpDisplayShell*"  style "performance-fix" # Gimp
+widget_class "*GimpToolbox*"   style "performance-fix"
+widget_class "*GimpMenuDock*"    style "performance-fix"
+widget "*OOoFixed*"          style "performance-fix" # Openoffice/Libreoffice
+widget_class "*MozContainer*"    style "performance-fix" # Firefox (Not sure if this one does anything though.)
+
 # Includes
 #include "apps/banshee.rc"
 include "apps/chromium.rc"
 include "apps/ff.rc"
 include "apps/gnome-terminal.rc"
 include "apps/nautilus.rc"
+include "apps/caja.rc"
+include "apps/mate-panel.rc"

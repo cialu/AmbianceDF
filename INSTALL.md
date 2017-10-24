@@ -11,3 +11,5 @@ Instructions on how to install **AmbianceDF** theme:
  - run installation script with ```$ ./INSTALL.sh```
 
 And enjoy it!
+
+***REMEMBER that to enable AmbianceDF Shell Theme, user-theme extension must be enabled***
