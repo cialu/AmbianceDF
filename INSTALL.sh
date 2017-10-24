@@ -44,7 +44,7 @@ cp --no-preserve=mode,ownership -r \
 echo "=> Icons installed ..."
 
 gtk-update-icon-cache -q ~/.icons/AmbianceDF\ Icons/ || true
-
+gsettings set org.gnome.desktop.interface icon-theme "AmbianceDF Icons"
 echo "=> Icons cached ..."
 
 fi
@@ -57,13 +57,12 @@ cp --no-preserve=mode,ownership -r \
 echo "=> Theme installed ..."
 
 gsettings set org.gnome.desktop.interface gtk-theme "AmbianceDF Theme"
-gsettings set org.gnome.desktop.interface icon-theme "AmbianceDF Icons"
 gsettings set org.gnome.desktop.wm.preferences theme "AmbianceDF Theme"
 
 echo "=> Theme turned on ..."
 
 echo "Installing shell ..."
-echo "User-theme extension must be enabled!"
+echo "User-theme extension must be enabled and fix applicated!"
 
 gsettings set org.gnome.shell.extensions.user-theme name "AmbianceDF"
 
