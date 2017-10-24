@@ -29,7 +29,7 @@ echo "=> Looking inside your system ..."
 
 echo "=> Installing ..."
 
-echo -n "Do you want to install also AmbianceDF icons? Type 'yes' and press [ENTER]: "
+echo -n "Do you want to install also AmbianceDF icons? Type 'yes' and press [ENTER] to install icons or type something different to skip this passage: "
 read choice
 
 if [ choice = "yes" ]; then
@@ -64,7 +64,7 @@ echo "=> Theme turned on ..."
 echo "Installing shell ..."
 echo "User-theme extension must be enabled and fix applicated!"
 
-gsettings set org.gnome.shell.extensions.user-theme name "AmbianceDF"
+gsettings set org.gnome.shell.extensions.user-theme name "AmbianceDF Theme"
 
 echo "=> Shell turned on ..."
 echo "=> Done!"
